@@ -86,4 +86,4 @@ exclude_generator:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: github
-  repo: https://github.com/CatalystDP/dp_blog.git
+  repo: https://github.com/CatalystDP/CatalystDP.github.io.git
