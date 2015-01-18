@@ -5,7 +5,8 @@
 # Site
 title: CatalystDP的博客
 subtitle:
-description:
+description: 这里是catalystdp的个人博客，职位：web前端工程师，热爱前端技术，热衷学习各种前端技术
+keywords: 'web前端 javascript nodejs php'
 author: taddeng
 email: 469589860@qq.com
 language: 中文
@@ -87,3 +88,6 @@ exclude_generator:
 deploy:
   type: github
   repo: https://github.com/CatalystDP/CatalystDP.github.io.git
+# plugins
+plugins:
+  - hexo-generator-sitemap

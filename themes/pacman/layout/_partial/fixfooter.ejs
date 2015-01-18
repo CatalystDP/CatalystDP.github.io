@@ -1,0 +1,36 @@
+<script>
+    (function () {
+        var body = document.getElementsByTagName('body')[0];
+        var containerHeight = document.getElementsByTagName('body')[0].scrollHeight,
+                e = document.documentElement || document.body,
+                allHeight = e.clientHeight;
+        body.style.height = containerHeight + 'px';
+        body.style.position = 'relative';
+        var footer = document.getElementsByClassName("footer")[0];
+            if(footer) {
+        footer.style.width = '96%';
+        if (containerHeight <= allHeight) {
+            var style = {position:'absolute',bottom:'0px',zIndex: 1};
+            for (var p in style) {
+                footer.style[p] = style[p];
+            }
+        }
+            }
+    })();
+
+    'onorientationchange' in window && (window.onorientationchange=function(){
+        var degree =Math.abs(window.orientation);
+        var footer=document.getElementsByClassName('footer')[0];
+        if(degree==90){
+            footer.style.cssText='width:96%;position:absolute;bottom:0px;zIndex: 1';
+        }
+        else{
+            footer.style.cssText='width:96%;postion:static;';
+        }
+    });
+    document.getElementsByClassName('closeaside')[0].style.display='none';
+</script>
+<script>
+    $('#bdcs-search-form-submit').remove();
+    $('#bdcs-search-form-input').attr({placeholder:'搜索'});
+</script>
