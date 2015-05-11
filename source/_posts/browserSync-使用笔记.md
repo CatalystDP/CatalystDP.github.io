@@ -1,6 +1,8 @@
 title: browserSync 使用笔记
 date: 2015-05-07 17:09:48
-tags: browserSync
+tags: 
+	- browserSync
+	- 工具
 categories: 工具
 keywords: browserSync 浏览器资源同步
 descriptions: browserSync 初步使用小结

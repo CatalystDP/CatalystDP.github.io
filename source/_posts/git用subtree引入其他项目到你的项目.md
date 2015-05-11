@@ -1,7 +1,9 @@
 title: git用subtree引入其他项目到你的项目
 date: 2015-01-11 11:59:30
 categories: 工具
-tags: git
+tags: 
+	- git
+	- 工具
 keywords: git subtree
 description: github subtree使用
 
