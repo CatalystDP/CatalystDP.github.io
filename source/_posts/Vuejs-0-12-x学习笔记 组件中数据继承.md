@@ -1,6 +1,8 @@
 title: Vuejs 0.12.x学习笔记——组件中数据继承
 date: 2015-07-19 23:34:10
-tags: MVVM
+tags: 
+	- MVVM
+	- 前端框架
 categories: 前端框架
 description: 
 ---
