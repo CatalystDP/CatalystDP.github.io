@@ -1,0 +1,211 @@
+
+  <!DOCTYPE HTML>
+<html lang="中文">
+<head>
+  <meta charset="UTF-8">
+  <meta name="baidu-site-verification" content="zZeFpB1n4e" />
+  
+    <title>Tag: git | CatalystDP的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="taddeng">
+    
+    <meta name="description" content="这里是catalystdp的个人博客，职位：web前端工程师，热爱前端技术，热衷学习各种前端技术">
+    
+    
+    
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+    <body>
+      <header>
+        <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.svg" alt="CatalystDP的博客" title="CatalystDP的博客"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="CatalystDP的博客">CatalystDP的博客</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					
+						<li><a href="/">主页</a></li>
+					
+						<li><a href="/archives">文章</a></li>
+					
+						<li><a href="/about">About me</a></li>
+					
+					<li>
+					
+						<script type="text/javascript">document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E%3Cscript charset="utf-8" src="http://znsv.baidu.com/customer_search/api/js?sid=13905347214389830836') + '&plate_url=' + (encodeURIComponent(window.location.href)) + '&t=' + (Math.ceil(new Date()/3600000)) + unescape('"%3E%3C/script%3E'));</script>
+					<!--<form class="search" action="http://zhannei.baidu.com/cse/search" method="get" accept-charset="utf-8">-->
+
+						<!--<label>Search</label>-->
+						<!--<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />-->
+						<!--<input type="hidden" name="s" value="13905347214389830836"/>-->
+						<!--<input type="hidden" name="entry" value="1"/>-->
+						<!--&lt;!&ndash;<input type="hidden" name="q" value="site:www.catalystdp.net">&ndash;&gt;-->
+					<!--</form>-->
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+
+      </header>
+      <div id="container">
+        
+
+<div class="archive-title" >
+  <h2 class="tag-icon">git</h2>
+  
+</div>
+<div id="main" class="archive-part clearfix">
+  <div id="archive-page">
+
+  <section class="post" itemscope itemprop="blogPost">
+  
+    <a href="/2015/01/11/git用subtree引入其他项目到你的项目/" title="git用subtree引入其他项目到你的项目" itemprop="url">
+  
+    <h1 itemprop="name">git用subtree引入其他项目到你的项目</h1>
+    
+    <time datetime="2015-01-11T03:59:30.000Z" itemprop="datePublished">Jan 11 2015</time>
+  </a>
+</section>
+
+
+  </div>
+</div>
+
+      </div>
+      <footer class="footer"><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font clearfix">
+		
+		
+		
+		<a href="https://github.com/CatalystDP" target="_blank" title="github"></a>
+		
+		
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2016 
+		
+		<a href="http://www.catalystdp.net" target="_blank" title="taddeng">taddeng</a>
+		
+		</p>
+</div>
+</footer>
+      <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.navbar').click(function () {
+            $('header nav').toggleClass('shownav');
+        });
+        var myWidth = 0;
+
+        function getSize() {
+            if (typeof( window.innerWidth ) == 'number') {
+                myWidth = window.innerWidth;
+            } else if (document.documentElement && document.documentElement.clientWidth) {
+                myWidth = document.documentElement.clientWidth;
+            }
+            ;
+        };
+        var m = $('#main'),
+                a = $('#asidepart'),
+                c = $('.closeaside'),
+                o = $('.openaside');
+        $(window).resize(function () {
+            getSize();
+            if (myWidth >= 1024) {
+                $('header nav').removeClass('shownav');
+            } else {
+                m.removeClass('moveMain');
+                a.css('display', 'block').removeClass('fadeOut');
+                o.css('display', 'none');
+                
+            }
+        });
+        c.click(function () {
+            a.addClass('fadeOut').css('display', 'none');
+            o.css('display', 'block').addClass('fadeIn');
+            m.addClass('moveMain');
+        });
+        o.click(function () {
+            o.css('display', 'none').removeClass('beforeFadeIn');
+            a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');
+            m.removeClass('moveMain');
+        });
+        $(window).scroll(function () {
+            o.css("top", Math.max(80, 260 - $(this).scrollTop()));
+        });
+    });
+</script>
+
+
+
+
+
+<script>
+    window.addEventListener('resize', resize);
+    function resize() {
+        var body = document.getElementsByTagName('body')[0];
+        var containerHeight = document.getElementsByTagName('body')[0].scrollHeight,
+                e = document.documentElement || document.body,
+                allHeight = e.clientHeight;
+        body.style.height = containerHeight + 'px';
+        body.style.position = 'relative';
+        var footer = document.getElementsByClassName("footer")[0];
+        if (footer) {
+            footer.style.width = '96%';
+            if (containerHeight <= allHeight) {
+                var style = {position: 'absolute', bottom: '0px', zIndex: 1};
+                for (var p in style) {
+                    footer.style[p] = style[p];
+                }
+            }
+        }
+    }
+
+    'onorientationchange' in window && (window.onorientationchange = function () {
+        var degree = Math.abs(window.orientation);
+        var footer = document.getElementsByClassName('footer')[0];
+        if (degree == 90) {
+            footer.style.cssText = 'width:96%;position:absolute;bottom:0px;zIndex: 1';
+        }
+        else {
+            footer.style.cssText = 'width:96%;postion:static;';
+        }
+    });
+    document.getElementsByClassName('closeaside')[0].style.display = 'none';
+    resize();
+</script>
+<script>
+    $('#bdcs-search-form-submit').remove();
+    $('#bdcs-search-form-input').attr({placeholder: '搜索'});
+</script>
+
+
+    </body>
+   </html>
