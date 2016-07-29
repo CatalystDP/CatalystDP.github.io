@@ -1,3 +1,5 @@
-User-Agent: Baiduspider
+User-Agent: *
 Allow: /
-
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/

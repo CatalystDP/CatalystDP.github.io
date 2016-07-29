@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.catalystdp.net/data/react-pager/index.html</loc>
+    <lastmod>2016-07-29T13:51:38.431Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.catalystdp.net/2016/07/29/%E5%9F%BA%E4%BA%8Ereact%E7%9A%84%E9%A1%B5%E9%9D%A2%E5%88%87%E6%8D%A2%E5%BA%93/</loc>
+    <lastmod>2016-07-29T13:51:30.064Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.catalystdp.net/2016/07/02/react%E5%8A%A8%E7%94%BB%E5%AE%9E%E8%B7%B5/</loc>
+    <lastmod>2016-07-29T13:33:36.124Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.catalystdp.net/2015/09/13/webpack%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/</loc>
     <lastmod>2016-07-25T05:06:30.126Z</lastmod>
   </url>
   
   <url>
     <loc>http://www.catalystdp.net/2015/01/11/git%E7%94%A8subtree%E5%BC%95%E5%85%A5%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE%E5%88%B0%E4%BD%A0%E7%9A%84%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2016-07-25T05:06:30.125Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.catalystdp.net/2016/07/02/react%E5%8A%A8%E7%94%BB%E5%AE%9E%E8%B7%B5/</loc>
     <lastmod>2016-07-25T05:06:30.125Z</lastmod>
   </url>
   

@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="baidu-site-verification" content="zZeFpB1n4e" />
   
-    <title>Yeoman学习笔记(一) InquirerJs 学习 | CatalystDP的博客</title>
+    <title>基于react的页面切换库 | CatalystDP的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="taddeng">
     
-    <meta name="description" content="最近想用Yeoman这个脚手架做一个自己平常用的项目生成器,项目地址：http://yeoman.io/。阅读了一部分开发文档，当看到user interaction 这一节的时候，yeoman用到了prompt，并且这个prompt是用的InquirerJs 提供的，因此需要大致了解一下，gith">
+    <meta name="description" content="">
     
     
     
@@ -73,15 +73,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/05/11/Yeoman学习笔记-一/" title="Yeoman学习笔记(一) InquirerJs 学习" itemprop="url">Yeoman学习笔记(一) InquirerJs 学习</a>
+      <a href="/2016/07/29/基于react的页面切换库/" title="基于react的页面切换库" itemprop="url">基于react的页面切换库</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://www.catalystdp.net" title="taddeng">taddeng</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-05-11T06:38:30.000Z" itemprop="datePublished">May 11 2015</time>
-    Updated:<time datetime="2016-07-25T05:06:30.124Z" itemprop="dateModified">Jul 25 2016</time>
+    <time datetime="2016-07-29T13:44:47.000Z" itemprop="datePublished">Jul 29 2016</time>
+    Updated:<time datetime="2016-07-29T13:51:30.064Z" itemprop="dateModified">Jul 29 2016</time>
     
   </p>
 </header>
@@ -90,65 +90,25 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、安装"><span class="toc-number">1.</span> <span class="toc-text">一、安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、开始编写代码"><span class="toc-number">2.</span> <span class="toc-text">二、开始编写代码</span></a></li></ol>
+		
 		</div>
 		
-		<p>最近想用Yeoman这个脚手架做一个自己平常用的项目生成器,项目地址：<a href="http://yeoman.io/" title="项目地址" target="_blank" rel="external">http://yeoman.io/</a>。<br>阅读了一部分开发文档，当看到user interaction 这一节的时候，yeoman用到了prompt，并且这个prompt是用的InquirerJs 提供的，因此需要大致了解一下，github地址：<a href="https://github.com/SBoudrias/Inquirer.js" target="_blank" rel="external">https://github.com/SBoudrias/Inquirer.js</a>，这是一个prompt的库，用起来很方便，上面的文档很详细，还有例子，下面是写了一个demo，来实例展示一下如何使用。</p>
-<h2 id="一、安装">一、安装</h2>
-<pre><code>npm <span class="operator"><span class="keyword">install</span> inquirer <span class="comment">--save</span></span>
-</code></pre><h2 id="二、开始编写代码">二、开始编写代码</h2>
-<pre><code><span class="keyword">var</span> inquirer=<span class="built_in">require</span>(<span class="string">'inquirer'</span>);
-inquirer.prompt([
-{
-    type:<span class="string">'input'</span>,
-    name:<span class="string">'firstName'</span>,
-    message:<span class="function"><span class="keyword">function</span><span class="params">(answer)</span></span>{
-        <span class="built_in">console</span>.log(answer);   <span class="comment">//这里的answer就是文档中所说的Anwser对象，</span>
-                              <span class="comment">//当输入了之后，这对象会有以 name为键,输入的内容值</span>
-                                <span class="comment">//的对象存在                </span>
-        <span class="keyword">return</span> <span class="string">'please input first name'</span>;
-    }
-},
-{
-    type:<span class="string">'input'</span>,
-    name:<span class="string">'secondName'</span>,
-    message:<span class="function"><span class="keyword">function</span><span class="params">(answer)</span></span>{
-        <span class="built_in">console</span>.log(answer);
-        <span class="keyword">return</span> <span class="string">'please input second name'</span>;
-    }
-},
-{
-    type:<span class="string">'confirm'</span>,
-    name:<span class="string">'confirm'</span>,
-    message:<span class="function"><span class="keyword">function</span><span class="params">(answer)</span></span>{
-        <span class="built_in">console</span>.log(answer);
-        <span class="keyword">return</span> <span class="string">'confirm input?'</span>;
-    }
-}
-],<span class="function"><span class="keyword">function</span><span class="params">(answers)</span></span>{
-    <span class="built_in">console</span>.log(<span class="string">'all answer'</span>,answers);
-});
-</code></pre><p>基于这个库，我们还可以开发各种交互式命令的小工具，非常方便。</p>
+		<iframe src="/data/react-pager/index.html" style="width:344px"></iframe>
   
 	</div>
 		<footer class="article-footer clearfix">
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/inquirer/">inquirer</a><a href="/tags/yeoman/">yeoman</a><a href="/tags/工具/">工具</a>
+  <span></span> <a href="/tags/React/">React</a><a href="/tags/库/">库</a>
   </div>
 
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/前端项目生成工具/">前端项目生成工具</a>
-</div>
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://www.catalystdp.net/2015/05/11/Yeoman学习笔记-一/" data-title="Yeoman学习笔记(一) InquirerJs 学习 | CatalystDP的博客" data-tsina="null" class="share clearfix">
+  <div data-url="http://www.catalystdp.net/2016/07/29/基于react的页面切换库/" data-title="基于react的页面切换库 | CatalystDP的博客" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -157,19 +117,11 @@ inquirer.prompt([
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/07/19/Vuejs-0-12-x学习笔记 组件中数据继承/" title="Vuejs 0.12.x学习笔记——组件中数据继承">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  Vuejs 0.12.x学习笔记——组件中数据继承</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/05/07/browserSync-使用笔记/"  title="browserSync 使用笔记">
+<a href="/2016/07/02/react动画实践/"  title="react动画实践">
  <strong>NEXT:</strong><br/> 
- <span>browserSync 使用笔记
+ <span>react动画实践
 </span>
 </a>
 </div>
@@ -178,7 +130,7 @@ inquirer.prompt([
 
 	
 <section class="comment">
-	<div class="ds-thread" data-thread-key="post-Yeoman学习笔记-一" data-title="Yeoman学习笔记(一) InquirerJs 学习" data-url="http://www.catalystdp.net/2015/05/11/Yeoman学习笔记-一/"></div>
+	<div class="ds-thread" data-thread-key="post-基于react的页面切换库" data-title="基于react的页面切换库" data-url="http://www.catalystdp.net/2016/07/29/基于react的页面切换库/"></div>
 </section>
 
 </div>  
@@ -186,7 +138,7 @@ inquirer.prompt([
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、安装"><span class="toc-number">1.</span> <span class="toc-text">一、安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、开始编写代码"><span class="toc-number">2.</span> <span class="toc-text">二、开始编写代码</span></a></li></ol>
+  
   </div>
 
 <div id="asidepart">
