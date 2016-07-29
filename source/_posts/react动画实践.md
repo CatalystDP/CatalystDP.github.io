@@ -42,4 +42,4 @@ categories:
    触发ListItem的componentWillEnter 生命周期。
 
 #### 总结
-- 组件只要放在ReactTransitionGroup内并且key是新增的就会触发动画。
+- 组件只要放在ReactTransitionGroup内并且key是变动的就会触发动画。
